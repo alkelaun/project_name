@@ -4,8 +4,8 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-neapolitan
-django-template-partials
+neapolitan = "*"
+django-template-partials = "*"
 pytz = ">=2021.1"
 python-slugify = ">=4.0.1"
 argon2-cffi = ">=20.1.0"
