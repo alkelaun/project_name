@@ -1,0 +1,9 @@
+from django import forms
+from .models import * 
+
+class {{ model_name }}(models.ModelForm):
+    class Meta:
+        model = {{ model_name }}
+        fiels = [ {% for model_field in model_fields %} {{model_field}}, {% endfor%}
+
+        ]

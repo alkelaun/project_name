@@ -1,0 +1,6 @@
+{% templatetag openblock %} extends "{{ app_label }}/{{ model_name_slug }}_base.html" {% templatetag closeblock %}
+
+
+{% verbatim %}{% block title %}{% endverbatim %}
+    {{ model_name_plural }}
+{% verbatim %}{% endblock %}{% endverbatim %}
