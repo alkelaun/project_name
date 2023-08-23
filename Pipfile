@@ -4,6 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+ipython = "*"
 neapolitan = "*"
 django-template-partials = "*"
 pytz = ">=2021.1"
