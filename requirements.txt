@@ -23,3 +23,4 @@ Pillow
 Twisted
 Django
 psycopg2-binary
+Werkzeug
