@@ -37,3 +37,18 @@ class ProtectedImageBase(models.Model):
     class Meta:
         abstract = True
 
+"""
+from django.http import HttpResponse
+
+def serve_protected_file(request, file_id):
+    # This is a simplified example. You'd check permissions here.
+    file_object = UserDocument.objects.get(id=file_id)
+
+    if request.user == file_object.owner:
+        # Construct the path for Nginx. It's relative to the Nginx root.
+        response = HttpResponse()
+        response['X-Accel-Redirect'] = '/protected/files/' + file_object.file.name.split('/')[-1]
+        return response
+    
+    return HttpResponse(status=403) # Forbidden
+"""
